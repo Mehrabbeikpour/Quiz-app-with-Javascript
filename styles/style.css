@@ -1,0 +1,43 @@
+@font-face {
+    font-family: vazir;
+    src: url(../assets/Vazir.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: none;
+    direction: rtl;
+    font-family: vazir;
+
+    /* color */
+    --primeryColor: #a22;
+    --secondaryColor: #f4b909;
+    --bgColor: #eee;
+    --bgColorDarker: #e6e6e6;
+    --wrongbgcolor: #ff222222;
+    --wrongTxtColor: #a22;
+    --correctbgColor: #22ff2222;
+    --correctTxtColor: #2a2;
+}
+
+html {
+    font-size: 16px;
+    background-color: var(--bgColor);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickDisable {
+    pointer-events: none;
+}
+
+.clickActive {
+    pointer-events: auto;
+}

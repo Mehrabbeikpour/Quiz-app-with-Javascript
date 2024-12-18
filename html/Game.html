@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../styles/style.css" />
+        <link rel="stylesheet" href="../styles/landingStyle.css" />
+        <link rel="stylesheet" href="../styles/gameStyle.css" />
+        <link rel="stylesheet" href="../styles/scoreStyle.css" />
+        <title>Game page</title>
+    </head>
+    <body>
+        <div class="gameContainer">
+            <header class="gameHeaderContainer">
+                <span>سطح ساده</span>
+                <div class="timerWrapper">
+                    <span id="timerView">00:00</span>
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16"
+                        width="16"
+                        height="16"
+                    >
+                        <path
+                            d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0 6.5 6.5 0 0 0-13 0Zm7-3.25v2.992l2.028.812a.75.75 0 0 1-.557 1.392l-2.5-1A.751.751 0 0 1 7 8.25v-3.5a.75.75 0 0 1 1.5 0Z"
+                        ></path>
+                    </svg>
+                </div>
+            </header>
+            <div class="gameBodyContainer">
+                <div class="gameResultContainer">
+                    <div class="gameResultCorrectContainer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 12 12"
+                            width="30"
+                            height="30"
+                        >
+                            <path
+                                d="M6 0a6 6 0 1 1 0 12A6 6 0 0 1 6 0Zm-.705 8.737L9.63 4.403 8.392 3.166 5.295 6.263l-1.7-1.702L2.356 5.8l2.938 2.938Z"
+                            ></path>
+                        </svg>
+                        <span id="correctAnswer">0</span>
+                    </div>
+                    <div class="gameResultWrongContainer">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 12 12"
+                            width="30"
+                            height="30"
+                        >
+                            <path
+                                d="M1.757 10.243a6.001 6.001 0 1 1 8.488-8.486 6.001 6.001 0 0 1-8.488 8.486ZM6 4.763l-2-2L2.763 4l2 2-2 2L4 9.237l2-2 2 2L9.237 8l-2-2 2-2L8 2.763Z"
+                            ></path>
+                        </svg>
+                        <span id="wrongAnswer">0</span>
+                    </div>
+                </div>
+                <div class="gameQAContainer">
+                    <p id="questionContact">سوال</p>
+                    <div class="gameAnswerContainer">
+                        <button
+                            id="answer1"
+                            class="gameEachAnswerContainer"
+                            name="1"
+                            onclick="handleAnswerClick()"
+                        >
+                            <span></span>
+                            <p>جواب</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
